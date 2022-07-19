@@ -30,10 +30,12 @@ const CartItem = (props) => {
           <span className={classes.itemprice}>(${price.toFixed(2)}/item)</span>
         </div>
       </header>
+
       <div className={classes.details}>
         <div className={classes.quantity}>
           x <span>{quantity}</span>
         </div>
+
         <div className={classes.actions}>
           <button onClick={removeItemHandler}>-</button>
           <button onClick={addItemHandler}>+</button>
