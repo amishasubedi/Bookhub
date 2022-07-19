@@ -8,6 +8,7 @@ export const fetchCartData = () => {
         "https://bookhub-ec04b-default-rtdb.firebaseio.com/cart.json"
       );
 
+      // handle errors
       if (!response.ok) {
         throw new Error("Could not fetch cart data!");
       }
